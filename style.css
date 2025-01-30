@@ -32,7 +32,6 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width: fit-content;
     width: 90%;
     height: fit-content;
     padding: 1rem;
@@ -138,6 +137,7 @@
   @media (min-width: 768px) {
  
     .profile-card{
+        width: 80%;
         flex-direction: row;
         padding: 3rem;
 
