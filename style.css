@@ -27,11 +27,13 @@
     font-size: .8rem;
   }
   .profile-card{
+    margin-top: 3rem;
     background-color: rgb(29, 28, 28);
     color: rgb(236, 236, 236);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    max-width: 55rem;
     width: 90%;
     height: fit-content;
     padding: 1rem;
@@ -134,12 +136,12 @@
     margin-top: 1rem;
  }
  
-  @media (min-width: 768px) {
+ @media (min-width: 768px) {
  
     .profile-card{
         width: 80%;
         flex-direction: row;
-        padding: 3rem;
+        padding: 1rem;
 
     }
     .social-links{
@@ -173,7 +175,7 @@
     }
   }
   
-  /* Some delays to make the animation look good */
+
  
  
 
