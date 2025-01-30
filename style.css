@@ -124,6 +124,9 @@
  .current-location, .current-time{
     color: rgb(128, 128, 128);
  }
+ .current-time{
+    margin-top: 1rem;
+ }
   @media (min-width: 768px) {
  
     .profile-card{
