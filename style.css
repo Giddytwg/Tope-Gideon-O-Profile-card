@@ -14,7 +14,7 @@
     justify-content: center;
     background-color: #f3f3f3;
     height: 100vh;
-    padding: 3rem 0;
+    padding: 1rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +33,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     max-width: fit-content;
-    width: 80%;
+    width: 90%;
     height: fit-content;
     padding: 1rem;
     text-align: center;
@@ -104,17 +104,19 @@
     animation: slideLeftIn 1s ease-in-out forwards; /* `forwards` keeps final state */
   }
 
-  .social-links a:nth-child(1) {
+  .left div {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+  }
+  .left h1 {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
     animation-delay: 0.2s;
   }
-  .social-links a:nth-child(2) {
-    animation-delay: 0.4s;
-  }
-  .social-links a:nth-child(3) {
-    animation-delay: 0.6s;
-  }
-  .social-links a:nth-child(4) {
-    animation-delay: 0.6s;
+  .left p{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 0.2s;
   }
 
 
@@ -148,6 +150,7 @@
     }
   }
 
+  /* Animations */
   @keyframes fadeIn {
     from {
         opacity: 0;
@@ -170,22 +173,9 @@
     }
   }
   
+  /* Some delays to make the animation look good */
  
-  .left div {
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
-  }
-  .left h1 {
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
-    animation-delay: 0.2s;
-  }
-  .left p{
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
-    animation-delay: 0.2s;
-  }
-
+ 
 
 
  
