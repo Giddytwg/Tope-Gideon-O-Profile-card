@@ -14,6 +14,7 @@
     justify-content: center;
     background-color: #f3f3f3;
     height: 100vh;
+    padding: 3rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +34,8 @@
     overflow: hidden;
     max-width: fit-content;
     width: 80%;
-    padding: 3rem;
+    height: fit-content;
+    padding: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -130,10 +132,13 @@
  .current-time{
     margin-top: 1rem;
  }
+ 
   @media (min-width: 768px) {
  
     .profile-card{
         flex-direction: row;
+        padding: 3rem;
+
     }
     .social-links{
         border: none;
