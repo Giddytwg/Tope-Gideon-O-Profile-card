@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Bricolage Grotesque', Arial, sans-serif;
+    justify-content: center;
+    background-color: #f3f3f3;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: .8rem;
+  }
+  .profile-card{
+    background-color: rgb(29, 28, 28);
+    color: rgb(236, 236, 236);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: fit-content;
+    width: 80%;
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5%;
+  }
+  
+  .left{
+    flex-basis: 45%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    padding-right: 1rem;
+  }
+
+  .right{
+    flex-basis: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+ .profile-pic-container {
+    width: 8rem;
+    height: 8rem;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+ }
+ .profile-picture{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+ .short-bio{
+    width: 100%;
+ }
+
+ .social-links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    border-top: 1px solid rgba(151, 151, 151, 0.185);
+    padding-top: 1rem;
+    
+ }
+ .social-links a {
+    width: 100%;
+    background-color: gray;
+    text-decoration: none;
+    color: inherit;
+    font-size: .8rem;
+    padding: .6rem;
+    border-radius: .4rem;
+    opacity: 0;
+    animation: slideLeftIn 1s ease-in-out forwards; /* `forwards` keeps final state */
+  }
+
+  .social-links a:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  .social-links a:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  .social-links a:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  .social-links a:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+
+
+ .social-links a:hover{
+    background-color: rgb(142, 245, 83);
+    color: black;
+ }
+
+ .job-title {
+    color: rgb(142, 245, 83);
+ }
+ .current-location, .current-time{
+    color: rgb(128, 128, 128);
+ }
+  @media (min-width: 768px) {
+ 
+    .profile-card{
+        flex-direction: row;
+    }
+    .social-links{
+        border: none;
+    }
+    .left{
+        border-right: 1px solid rgba(151, 151, 151, 0.185);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+  }
+
+  @keyframes slideLeftIn {
+    from {
+      translate: 100%;  /* Start off-screen to the left */
+      opacity: 0;
+    }
+    to {
+      translate: 0;  /* Ensure it stays at the final position */
+      opacity: 1;
+    }
+  }
+  
+ 
+  .left div {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+  }
+  .left h1 {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 0.2s;
+  }
+  .left p{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 0.2s;
+  }
+
+
+
+ 
+  
+  
