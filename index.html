@@ -4,29 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>HNG-Profile card</title>
+    <script src="https://kit.fontawesome.com/06906a5a59.js" crossorigin="anonymous"></script>
+    <title>Tope Gideon. O webflow expert</title>
 </head>
 <body>
     <div class="profile-card">
-        <div class="left">
-            <div class="profile-pic-container">
-                <img src="/assets/IMG-20201216-WA0029.jpg" alt="Profile Picture" class="profile-picture" data-testid="profilePicture">
-            </div>
-            <h1 class="full-name" data-testid="fullName">Oyenpemi Tope <span>(GodHand)</span></h1>
-            <p class="job-title" data-testid="jobTitle">Software Engineer</p>
-            <p class="short-bio" data-testid="shortBio">
-              "Passionate software engineer focused on building efficient and scalable web applications. Skilled in front-end and back-end technologies, with a strong drive to solve complex problems. Enthusiastic about learning new tools, improving development processes, and creating seamless user experiences in every project I undertake."
-            </p>
-            <p class="current-location" data-testid="currentLocation"><span class="ghost">Located at:</span> Ile-Ife, Nigeria</p>
+      <div class="profile-card-top">
+          <section class="details left">
+              <div class="profile-pic-container">
+                  <img src="https://pbs.twimg.com/profile_images/1940355857943846912/EawFhtHk_bigger.jpg" alt="Profile Picture" class="profile-picture" data-testid="profilePicture">
+              </div>
+              <h1 class="full-name" data-testid="fullName">Tope Gideon. O</h1>
+              <p class="job-title" data-testid="jobTitle">Webflow Expert</p>
+              <p class="short-bio" data-testid="shortBio">
+                <span class="green">3+</span> yrs experience, <span>40+</span> projects, I build responsive, SEO-optimized, and custom-coded websites that do more than look good, they perform.
+              </p>
+                <p>Hire me!👇</p>
+              <a class="social-link hire-button" href="https://www.upwork.com/freelancers/~01ac39886cec06e248?viewMode=1"><i class="fa-brands fa-upwork"></i></a>
+             
+          <section class="socials-portfolio right">
+              <div class="social-links" data-testid="socialLinks">
+                  <a class="social-link email" href="mailto:conceptxx@gmail.com" data-testid="emailAddress"><i class="fa-solid fa-envelope"></i></a>
+
+                <a class="social-link" href="https://www.linkedin.com/in/tope-oyenpemi-2a3470245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"> <i class="fa-brands fa-linkedin-in"></i></a>
+
+                <a class="social-link" href="https://github.com/Giddytwg" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+                <a class="social-link" href="https://x.com/TopeGideon_" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+              <!-- <p class="current-time" data-testid="currentTimeUTC">Current Time: <span id="utc-time"></span></p> -->
+          </section>
+           <p class="current-location" data-testid="currentLocation"><span class="ghost">Location:</span> Ile-Ife, Nigeria <span style="color: rgb(142, 245, 83); font-weight: lighter;">(Open to working remotely)</span></p>
+            </section>
         </div>
-        <div class="right">
-            <div class="social-links" data-testid="socialLinks">
-                <a class="email" href="mailto:conceptxx@gmail.com" data-testid="emailAddress">gconceptxx@gmail.com</a>
-              <a href="https://www.linkedin.com/in/tope-oyenpemi-2a3470245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a>
-              <a href="https://github.com/Giddytwg" target="_blank">GitHub</a>
-              <a href="https://x.com/topegideon_twg?s=21" target="_blank">Twitter</a>
-            </div>
-            <p class="current-time" data-testid="currentTimeUTC">Current Time: <span id="utc-time"></span></p>
+        
+        <div class="profile-card-down">
+          <div class="portfolio">
+                <h3>Portfolio Projects</h3>
+                <article class="project-card-container">
+                  <!-- Content added dynamically from JS -->
+                </article>
+              </div>
         </div>
       </div>
     <script src="script.js"></script>
