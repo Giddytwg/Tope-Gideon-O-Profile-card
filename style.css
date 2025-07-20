@@ -37,10 +37,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     max-width: 55rem;
-    width: 90%;
+    width: 100%;
     height: fit-content;
     padding: 3rem;
   }
+
   /* Gradient shape */
   .gradient-shape {
   position: absolute;
@@ -329,7 +330,7 @@
     .profile-card{
      flex-direction: column;
      margin-top: 2rem;
-     padding: 1.4rem;
+     padding: 0rem;
     }
     .profile-card-top{
         border-right: none;
@@ -337,14 +338,8 @@
     }
 
     .portfolio{
-      padding: 0;
+      padding: 1rem;
     }
-
-    .project-card-container {
-  display: grid;
-  grid-template-columns: 1fr; /* Single column */
-  gap: 16px;
-}
 
   }
 
