@@ -43,7 +43,7 @@
   }
 
   /* Gradient shape */
-  .gradient-shape {
+  /* .gradient-shape {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -66,7 +66,7 @@
   bottom: 0;
   left: -50px;
   animation: floatAround3 8s ease-in-out infinite alternate;
-}
+} */
 
 
   .profile-card-top{
@@ -151,7 +151,7 @@
   transform: scale(1.05) rotate(-2deg);
 }
  .short-bio{
-  font-size: 1.4rem;
+  font-size: 1.3rem;
     width: 100%;
     font-weight: lighter;
     line-height: 1.8;
@@ -163,7 +163,7 @@
     color: rgb(142, 245, 83);
  }
  .short-bio span.changing-words{
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 600;
     color: rgb(142, 245, 83);
  }
@@ -186,7 +186,7 @@
     background-color: rgba(58, 57, 57, 0.185);
     text-decoration: none;
     color: inherit;
-    font-size: .8rem;
+    font-size: 1rem;
     padding: .7rem;
     border-radius: .4rem;
     transition: all 0.3s ease;
@@ -278,7 +278,7 @@
 .project-name{
     color: rgb(142, 245, 83);
     font-weight: lighter;
-    font-size: .7rem;
+    font-size: .9rem;
     font-weight: 600;
     margin-bottom: .5rem;
 }
@@ -305,7 +305,7 @@
 }
 
 .project-description{
-    font-size: .5rem;
+    font-size: .6rem;
     font-weight: lighter;
     text-align: center;
     margin: auto auto;
@@ -314,7 +314,7 @@
     width: 90%;
 }
 .project-link{
-    font-size: .5rem;
+    font-size: .7rem;
     color: rgb(142, 245, 83);
     text-decoration: none;
     font-weight: 600;
