@@ -117,8 +117,23 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// Changing words in the short bio
+const words = ["Cooperates", "Individuals", "Businesses"];
+  const container = document.querySelector(".changing-words");
 
-  // .portfolio:hover i {
-  //   scale: 1.1;
-  //   color:;
-  // }
+  let index = 0;
+
+  function dropNextWord() {
+    // Clear the container and add a new span with animation
+    container.innerHTML = "";
+
+    const word = document.createElement("span");
+    word.textContent = words[index];
+    container.appendChild(word);
+
+    index = (index + 1) % words.length;
+  }
+
+  // Start and repeat
+  dropNextWord();
+  setInterval(dropNextWord, 2500); // Change word every 2.5s
