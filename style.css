@@ -339,6 +339,13 @@
     .portfolio{
       padding: 0;
     }
+
+    .project-card-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column */
+  gap: 16px;
+}
+
   }
 
   /* Animations */
