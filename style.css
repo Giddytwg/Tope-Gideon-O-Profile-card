@@ -38,7 +38,7 @@
     overflow: hidden;
     max-width: 55rem;
     width: 100%;
-    height: fit-content;
+    height: 90vh;
     padding: 3rem;
   }
 
@@ -350,6 +350,9 @@
      margin-top: 2rem;
      padding: 0rem;
      overflow: visible;
+     height: fit-content;
+    box-shadow: 0 15px 60px rgba(255, 254, 254, 0.1);
+
     }
     .profile-card-top{
         border-right: none;

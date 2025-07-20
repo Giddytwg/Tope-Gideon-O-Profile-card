@@ -68,8 +68,7 @@ projectCardContainer.innerHTML = projects.map(project => {
 // Counter
 const counterEl = document.getElementById('counter');
 const counter2El = document.getElementById('green');
-  const target = 40;
-  const target2 = 3;
+  const target = 30;
   const duration = 3000;
 
   let start = 0; // For counter 1
