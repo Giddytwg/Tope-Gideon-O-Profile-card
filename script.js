@@ -1,5 +1,5 @@
-// Get element from dom
 
+// Get element from dom
 const projectCardContainer = document.querySelector('.project-card-container');
 
 // Function to display the current UTC time
@@ -52,10 +52,37 @@ async () => {
 projectCardContainer.innerHTML = projects.map(project => {
   return `
     <div class="project-card">
-      <img class="project-image" src="${project.projectImage}" alt="${project.projectName}">
-      <h3 class="project-name">${project.projectName}</h3>
-      <p class="project-description">${project.overview}</p>
+      <div class="project-image-container">
+      <img src="${project.projectImage}" alt="${project.projectName}">
+      </div>
+      <div>
+        <h3 class="project-name">${project.projectName}</h3>
+        <p class="project-description">${project.overview}</p>
+      </div>
       <a href="${project.link}" class="project-link" target="_blank">View Project</a>
     </div>
   `;
 }).join('');    
+
+
+// Counter
+const counterEl = document.getElementById('counter');
+const counter2El = document.getElementById('green');
+  const target = 40;
+  const target2 = 3;
+  const duration = 3000;
+
+  let start = 0; // For counter 1
+
+  const increment = target / (duration / 16);
+
+  const countUp = () => {
+    start += increment;
+    if (start < target) {
+      counterEl.textContent = Math.floor(start);
+      requestAnimationFrame(countUp);
+    } else {
+      counterEl.textContent = target;
+    }
+  };
+  countUp();
