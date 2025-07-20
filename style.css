@@ -178,12 +178,15 @@
     background-color: rgba(58, 57, 57, 0.185);
     text-decoration: none;
     color: inherit;
-    font-size: 1rem;
-    padding: .8rem;
+    font-size: .8rem;
+    padding: .7rem;
     border-radius: .4rem;
     transition: all 0.3s ease;
     transform: translateY(0);
     animation: slideLeftIn 1s ease-in-out forwards; /* `forwards` keeps final state */
+  }
+  .social-link i {
+    opacity: .3;
   }
 .social-link:hover i {
     scale: 1.3;
