@@ -105,7 +105,6 @@ window.addEventListener('scroll', () => {
       portfolioIcon.style.color = ' rgb(142, 245, 83)'; // Reset icon color
       // portfolioIcon.style.scale = '1.1'; // Scale up the icon
       portfolioIcon.style.rotate = '15deg '; // Scale up the icon
-      console.log('Sticky shadow added',portfolioIcon);
     }
   } else {
     if (isStuck) {
@@ -114,8 +113,6 @@ window.addEventListener('scroll', () => {
       portfolioIcon.style.color = ' white'; // Reset icon color
       // portfolioIcon.style.scale = '1'; // Scale up the icon
       portfolioIcon.style.rotate = '0deg '; // Scale up the icon
-      console.log('Sticky shadow added',portfolioIcon);
-      console.log('Sticky shadow removed');
     }
   }
 });
