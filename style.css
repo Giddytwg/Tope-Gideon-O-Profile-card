@@ -78,7 +78,8 @@
     gap: 1rem;
     padding-right: 2rem;
     border-right: 1px solid rgba(151, 151, 151, 0.05);
-    z-index: 100;
+    z-index: 10;
+    
   }
   .profile-card-top:hover .fa-webflow{
     scale: 1.3;
@@ -99,12 +100,9 @@
     padding-left: 2rem;
   }
   .portfolio i{
-    transition: scale .3s ease-in-out, color .3s ease-in-out;
+    transition: scale .3s ease-in-out, color .3s ease-in-out, rotate .3s ease-in-out;
   }
-  .portfolio:hover i {
-    scale: 1.1;
-    color: rgb(142, 245, 83);
-  }
+
 
   .left{
     flex-basis: 50%;
@@ -318,7 +316,12 @@
 }
 
 
+/* Shadow on scroll */
 
+.profile-card-down.shadow-on-scroll {
+  box-shadow: 0 15px 60px rgba(255, 254, 254, 0.1);
+  transition: box-shadow 0.3s ease;
+}
 
 
 /* BREAK POINTS */
@@ -331,12 +334,21 @@
      flex-direction: column;
      margin-top: 2rem;
      padding: 0rem;
+     overflow: visible;
     }
     .profile-card-top{
         border-right: none;
         padding: 0rem 0;
+        position: sticky;
+        top: 0;
     }
-
+    .profile-card-down{
+      position: relative;
+      z-index: 22;
+      background-color: rgb(29, 28, 28);
+      border-radius: 20px;
+      
+    }
     .portfolio{
       padding: 1rem;
     }
