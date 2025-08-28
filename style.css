@@ -36,37 +36,12 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width: 55rem;
+    max-width: 80%;
     width: 100%;
-    height: 90vh;
+    height: fit-content;
     padding: 3rem;
   }
 
-  /* Gradient shape */
-  /* .gradient-shape {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(circle at center, rgb(142, 245, 83), rgba(253, 255, 252, 0));
-  filter: blur(200px);
-  border-radius: 50%;
-}
-.shape1{
-  top: 10%;
-  left: -50%;
-  animation: floatAround1 8s ease-in-out infinite alternate;
-}
-.shape2{
-  top:0%;
-  right: 0%;
-  animation: floatAround2 8s ease-in-out infinite alternate;
-
-}
-.shape3{
-  bottom: 0;
-  left: -50px;
-  animation: floatAround3 8s ease-in-out infinite alternate;
-} */
 
 
   .profile-card-top{
@@ -93,8 +68,9 @@
   }
 
   .portfolio{
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     gap: 1rem;
     padding-left: 2rem;
@@ -278,7 +254,7 @@
 .project-name{
     color: rgb(142, 245, 83);
     font-weight: lighter;
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 600;
     margin-bottom: .5rem;
 }
@@ -305,7 +281,7 @@
 }
 
 .project-description{
-    font-size: .6rem;
+    font-size: .8rem;
     font-weight: lighter;
     text-align: center;
     margin: auto auto;
