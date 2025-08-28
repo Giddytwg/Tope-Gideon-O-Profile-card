@@ -97,33 +97,33 @@ const counter2El = document.getElementById('green');
 
 
   // adds Shadow on scroll
-  const profileTop = document.querySelector('.profile-card-top');
-const profileDown = document.querySelector('.profile-card-down');
-const portfolioIcon = document.querySelector('.fa-business-time');
+//   const profileTop = document.querySelector('.profile-card-top');
+// const profileDown = document.querySelector('.profile-card-down');
+// const portfolioIcon = document.querySelector('.fa-business-time');
 
-window.addEventListener('scroll', () => {
-  const isStuck = profileTop.classList.contains('is-stuck');
+// window.addEventListener('scroll', () => {
+//   const isStuck = profileTop.classList.contains('is-stuck');
 
-  const topOffset = profileTop.getBoundingClientRect().top;
+//   const topOffset = profileTop.getBoundingClientRect().top;
 
-  if (topOffset <= 0) {
-    if (!isStuck) {
-      profileTop.classList.add('is-stuck');
-      profileDown.classList.add('shadow-on-scroll');
-      portfolioIcon.style.color = ' rgb(142, 245, 83)'; // Reset icon color
-      // portfolioIcon.style.scale = '1.1'; // Scale up the icon
-      portfolioIcon.style.rotate = '15deg '; // Scale up the icon
-    }
-  } else {
-    if (isStuck) {
-      profileTop.classList.remove('is-stuck');
-      profileDown.classList.remove('shadow-on-scroll');
-      portfolioIcon.style.color = ' white'; // Reset icon color
-      // portfolioIcon.style.scale = '1'; // Scale up the icon
-      portfolioIcon.style.rotate = '0deg '; // Scale up the icon
-    }
-  }
-});
+//   if (topOffset <= 0) {
+//     if (!isStuck) {
+//       profileTop.classList.add('is-stuck');
+//       profileDown.classList.add('shadow-on-scroll');
+//       portfolioIcon.style.color = ' rgb(142, 245, 83)'; // Reset icon color
+//       // portfolioIcon.style.scale = '1.1'; // Scale up the icon
+//       portfolioIcon.style.rotate = '15deg '; // Scale up the icon
+//     }
+//   } else {
+//     if (isStuck) {
+//       profileTop.classList.remove('is-stuck');
+//       profileDown.classList.remove('shadow-on-scroll');
+//       portfolioIcon.style.color = ' white'; // Reset icon color
+//       // portfolioIcon.style.scale = '1'; // Scale up the icon
+//       portfolioIcon.style.rotate = '0deg '; // Scale up the icon
+//     }
+//   }
+// });
 
 // Changing words in the short bio
 const words = ["Cooperates", "Individuals", "Businesses"];
