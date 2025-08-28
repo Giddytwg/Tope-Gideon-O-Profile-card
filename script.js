@@ -25,13 +25,14 @@ async () => {
       overview: "A pixel-perfect Figma Store clone with product grid, filters, and responsive design",
       link: "https://figma-store-clone-v0.vercel.app/"
     },
-    {
-      projectName: "Easy Care Losk",
-      projectImage: "/assets/easy.png",
-      techStack: "React • Tailwind • Vercel",
-      overview: "A clean, responsive platform that connects users with trusted health professionals.",
-      link: "https://easy-care-losk.vercel.app/"
-  },
+     {
+    projectName: "Crypton crypto",
+    projectImage: "/assets/crypton.png",
+    techStack: "Webflow",
+    overview: "A modern platform for trading and managing cryptocurrencies.",
+    link: "https://crypton-crypt.webflow.io/"
+    },
+    
   {
     projectName: "Stellar SaaS",
     projectImage: "/assets/stellar.png",
@@ -45,7 +46,15 @@ async () => {
     techStack: "Webflow",
     overview: "A modern real estate platform for browsing homes across U.S. cities",
     link: "https://just-home-by-giditals.webflow.io/"
-  }
+  },
+  {
+      projectName: "Easy Care Losk",
+      projectImage: "/assets/easy.png",
+      techStack: "React • Tailwind • Vercel",
+      overview: "A clean, responsive platform that connects users with trusted health professionals.",
+      link: "https://easy-care-losk.vercel.app/"
+  },
+ 
   ]
 
   // loop through projects and display them
