@@ -25,21 +25,36 @@ async () => {
       overview: "A pixel-perfect Figma Store clone with product grid, filters, and responsive design",
       link: "https://figma-store-clone-v0.vercel.app/"
     },
-     {
-    projectName: "Crypton crypto",
-    projectImage: "/assets/crypton.png",
+    {
+    projectName: "Swiss-Belhotel International",
+    projectImage: "/assets/swiss-belhotel.png",
     techStack: "Webflow",
-    overview: "A modern platform for trading and managing cryptocurrencies.",
-    link: "https://crypton-crypt.webflow.io/"
-    },
-    
-  {
-    projectName: "Stellar SaaS",
-    projectImage: "/assets/stellar.png",
-    techStack: "Webflow",
-    overview: "A vibrant Webflow SaaS template with dynamic animations, responsive layout, and feature-rich sections.",
-    link: "https://stellar-saas.webflow.io/"
+    overview: "The online presence of Swiss-Belhotel International — a hospitality & hotel group showcasing their properties and services.",
+    link: "https://swiss-belhotel-international.webflow.io/"
   },
+  {
+    projectName: "Gleamy creatives",
+    projectImage: "/assets/gleamy.png",
+    techStack: "Webflow",
+    overview: "A creative / agency site focused on design, branding and digital services.",
+    link: "https://gleamy-creatives.webflow.io/"
+  },
+    {
+      projectName: "Minders Web",
+      projectImage: "/assets/Minders.png",
+      techStack: "Webflow",
+      overview: "A site showcasing a digital or creative service (possibly agency or portfolio).",
+      link: "https://mindersweb.webflow.io/"
+    },
+
+    {
+      projectName: "Crypton crypto",
+      projectImage: "/assets/crypton.png",
+      techStack: "Webflow",
+      overview: "A modern platform for trading and managing cryptocurrencies.",
+      link: "https://crypton-crypt.webflow.io/"
+    },
+  
   {
     projectName: "Just Home by Giditals",
     projectImage: "/assets/just home.png",
@@ -61,15 +76,17 @@ async () => {
 projectCardContainer.innerHTML = projects.map(project => {
   return `
     <div class="project-card">
+    <a href="${project.link} class="project" target="_blank" style="text-decoration=none">
       <div class="project-image-container">
-      <img src="${project.projectImage}" alt="${project.projectName}">
+        <img src="${project.projectImage}" alt="${project.projectName}">
       </div>
       <div>
         <h3 class="project-name">${project.projectName}</h3>
         <p class="project-description">${project.overview}</p>
       </div>
       <a href="${project.link}" class="project-link" target="_blank">View Project</a>
-    </div>
+      </div>
+    </a>
   `;
 }).join('');    
 
