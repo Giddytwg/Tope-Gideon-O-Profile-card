@@ -320,14 +320,20 @@ a {
 
 
 /* BREAK POINTS */
-@media (min-width: 768px){
-  
-}
 
+ @media (max-width: 479px) {
+  .project-card-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Two equal columns */
+    gap: 16px;
+  }
+ }
+ 
  @media (max-width: 768px) {
   body{
     padding: 0rem 0;
   }
+
     .profile-card{
      flex-direction: column;
      margin-top: 2rem;

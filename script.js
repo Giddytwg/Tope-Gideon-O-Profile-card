@@ -76,7 +76,7 @@ async () => {
 projectCardContainer.innerHTML = projects.map(project => {
   return `
     <div class="project-card">
-    <a href="${project.link} class="project" target="_blank" style="text-decoration=none">
+    <a href="${project.link}" class="project" target="_blank" style="text-decoration=none">
       <div class="project-image-container">
         <img src="${project.projectImage}" alt="${project.projectName}">
       </div>
